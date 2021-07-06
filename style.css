@@ -1,0 +1,185 @@
+.conteiner {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    row-gap: 1em;
+    column-gap: 1em;
+}
+
+.red {
+    height: 40px;
+    background-color: red;
+    grid-column: 1/3;
+}
+
+.blue {
+    height: 40px;
+    background-color: blue;
+    grid-column: 3/5;
+}
+
+.green {
+    height: 40px;
+    background-color: green;
+}
+
+.purple {
+    height: 40px;
+    background-color: purple;
+    grid-column: 2/5;
+}
+
+.yellow {
+    height: 40px;
+    background-color: yellow;
+    grid-column: 1/5;
+}
+
+.conteiner {
+    width: 400px;
+    margin: auto;
+}
+
+.conteiner div {
+    border-radius: 8px;
+}
+
+
+
+
+#red {
+    height: 100px;
+    background-color: red;
+    grid-row: 1;
+    grid-column: 1/5;
+
+}
+
+#blue {
+    background-color: blue;
+    grid-column: 1/3;
+    grid-row: 2 / span 2;
+}
+
+#green {
+    height: 100px;
+    background-color: green;
+    grid-column: 3/5;
+
+}
+
+#purple {
+    height: 100px;
+    background-color: purple;
+}
+
+#purple2 {
+    height: 100px;
+    background-color: purple;
+}
+
+
+
+
+
+header {
+    background-color: gray;
+
+    height: 100px;
+    text-align: center;
+}
+
+aside {
+    background-color: darkgray;
+    height: 100px;
+    text-align: center;
+}
+
+main {
+    background-color: darkgray;
+    grid-column: 2/4;
+    height: 100px;
+    text-align: center;
+}
+
+section {
+    background-color: darkgray;
+
+    height: 100px;
+    text-align: center;
+}
+
+footer {
+    background-color: darkgray;
+
+    height: 100px;
+    text-align: center;
+}
+
+
+@media (max-width: 576px)  {
+    header {
+        grid-column: 1/5;
+    }
+
+    aside {
+        grid-column: 1/5;
+    }
+
+    main {
+        grid-column: 1/5;
+    }
+
+    section {
+        grid-column: 1/5;
+    }
+
+    footer {
+        grid-column: 1/5;
+    }
+
+}
+
+@media (min-width: 577px) and (max-width: 767px) {
+    header {
+        grid-column: 1/5;
+    }
+
+    aside {
+        grid-column: 1/2;
+    }
+
+    main {
+        grid-column: 2/5;
+    }
+
+    section {
+        grid-column: 1/5;
+    }
+
+    footer {
+        grid-column: 1/5;
+    }
+}
+
+@media (min-width: 768px)and (max-width: 1400px) {
+    header {
+        grid-column: 1/5;
+    }
+
+    aside {
+        grid-column: 1/2;
+    }
+
+    main {
+        grid-column: 2/4;
+    }
+
+    section {
+        grid-column: 4/5;
+    }
+
+    footer {
+        grid-column: 1/5;
+    }
+}
